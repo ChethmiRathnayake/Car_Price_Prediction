@@ -3,4 +3,5 @@ xgboost
 scikit-learn
 scikit-optimize
 category_encoders
+pandas.core.indexes.numeric
 pandas
