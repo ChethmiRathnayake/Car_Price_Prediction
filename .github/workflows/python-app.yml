@@ -29,8 +29,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    # Step 4: Run tests (if you have tests, adjust this step accordingly)
+    # Step 4: Run tests (pytest)
     - name: Run tests
       run: |
-        # You can adjust this if you are using a different test framework
-        pytest
+        pytest  # Adjust if using a different test framework
