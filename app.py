@@ -13,26 +13,32 @@ st.title('Car Price Prediction App')
 st.header('Enter the vehicle details:')
 
 # Collecting the input features interactively from the user
-manufacture_year = st.number_input('Manufacture Year', min_value=1980, max_value=2024, value=2024)
-brand = st.text_input('Brand', '')
-specific_model = st.text_input('Model', '')
-additional_designation = st.text_input('Additional Designation', '')
+year = st.number_input('Year', min_value=1980, max_value=2024, value=2024)
+make = st.text_input('Make', '')
+model = st.text_input('Model', '')
+trim = st.text_input('Trim', '')
 body = st.selectbox('Body Type', ['Sedan', 'SUV', 'Truck', 'Coupe', 'Convertible', 'Wagon', 'Van'], index=0)
+state = st.text_input('State', '')
 condition = st.slider('Condition (1-100)', min_value=1, max_value=100, value=50)
 odometer = st.number_input('Odometer (miles)', min_value=0)
+color = st.text_input('Color', '')
+interior = st.text_input('Interior', '')
 seller = st.text_input('Seller', '')
 
 # Add a predict button
 if st.button('Predict MMR'):
     # Create the input dictionary (as you did in the notebook)
     input_data = {
-        'manufacture_year': [manufacture_year],
-        'brand': [brand],
-        'specific_model': [specific_model],
-        'additional_designation': [additional_designation],
+        'year': [year],
+        'make': [make],
+        'model': [model],
+        'trim': [trim],
         'body': [body],
+        'state': [state],
         'condition': [condition],
         'odometer': [odometer],
+        'color': [color],
+        'interior': [interior],
         'seller': [seller]
     }
     
