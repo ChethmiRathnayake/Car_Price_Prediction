@@ -38,7 +38,7 @@ A machine learning project to predict the price of a car based on various featur
 * Linear Regression
 * Random Forest Regressor
 * XGBoost Regressor *(optional)*
-* GridSearchCV / Hyperparameter tuning *(if applied)*
+* Lasso
 
 ---
 
